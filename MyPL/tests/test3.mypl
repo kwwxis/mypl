@@ -1,0 +1,17 @@
+// TESTING ORDER OF OPERATIONS AND GROUPING
+
+println("foo " + 5);
+
+println(5 - 2 * 3); // -1
+
+println(5 - (2 * 3)); // -1
+
+println((5 - 2) * 3); // 9
+
+println("");
+
+println(2 * 3 - 2); // 4
+println(2 * (3 - 2)); // 2
+println((2 * 3) - 2); // 4
+
+println("A" + 1 + "B" + 2 + "C" + 3 + "D" + 4);

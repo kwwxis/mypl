@@ -1,0 +1,73 @@
+// GENERAL TEST 1
+
+x = 3 + 4;
+msg = "The value is: ";
+print(msg);
+println(x);
+
+// Test if statement
+
+if x == 7 {
+    println("x is 7");
+} else if x == 8 {
+    println("x is 8");
+} else {
+    println("x is not 7 or 8");
+}
+
+if x < 10 {
+    println("x is less than 10");
+    x = 10;
+} else {
+    println("x is greater than or equal to 10");
+    x = 10;
+}
+
+print("x = " + x);
+
+// Test booleans
+
+y = true;
+if y == true {
+    println("y is true");
+} else {
+    println("y is false");
+}
+
+// Test while loop
+
+w = 0;
+while w < 3 {
+    print("w = ");
+    println(w);
+    w = w + 1;
+}
+
+// Test list stuff
+
+z = [1,2,3];
+println(z);         // [1,2,3]
+println(z[1]);      // 2
+z[1] = 5;
+println(z[0]);      // 1
+println(z);         // [1,5,3]
+i = 2;
+println(z[i]);      // 3
+
+z[] = 4;            // append 4 to z
+println(z);         // [1,5,3,4]
+z[3] = 6;
+println(z);         // [1,5,3,6]
+println(len(z));    // 4
+
+// String index access
+
+s = "foobar";
+
+println("");
+println("s: " + s);
+println("s[0]: " + s[0]);
+println("s[1]: " + s[1]);
+println("s[4 - 1]: " + s[4 - 1]);
+println("s[5]: " + s[5]);
+println("len(s): " + len(s));

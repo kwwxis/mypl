@@ -1,0 +1,39 @@
+// GENERAL TEST 3
+
+stopProgram = false;
+friendList = [];
+
+println("Hello " + readstr("Enter your name: "));
+
+while not stopProgram {
+    friend = readstr("Enter a name of a friend: ");
+    friendList[] = friend;
+
+    print("Friend list: ");
+
+    i = 0;
+
+    while i < len(friendList) and i >= 0 {
+        print(friendList[i]);
+        i = i +1;
+
+        if i != len(friendList) {
+            print(", ");
+        } else {
+            println(".");
+        }
+    }
+
+    println("# of Friends: " + len(friendList) + " " + (len(friendList) - 1));
+    println("");
+
+    shouldContinue = readint("Enter 0 if you would like to quit. Enter 1 if you want to continue to use the program: ");
+
+    if shouldContinue == 0 {
+        stopProgram = true;
+    } else if shouldContinue == 1 {
+        stopProgram = false;
+    } else {
+        stopProgram = false;
+    }
+}

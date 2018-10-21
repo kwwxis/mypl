@@ -1,0 +1,42 @@
+// GENERAL TEST 2
+
+a = 5;
+b = true;
+c = 5 * 5;
+d = c * 5;
+e = not b;
+
+if b {
+    println("hello");
+} else if a == 5 {
+    print(b);
+} else {
+    b = false;
+}
+
+// Test unnecessary spaces
+
+if      c           == 25 {
+    c = 50    ;
+}
+
+// AVERAGE CALC
+
+list = [];
+
+i = 0;
+while i < 5 {
+    list[] = readint("Enter the "+ (i+1) +"/5 number: ");
+    i = i + 1;
+}
+
+println(list);
+
+i = 0;
+sum = 0;
+while i < 5 {
+    sum = sum + list[i];
+    i = i + 1;
+}
+
+print("Average: " + (sum / 5) );
